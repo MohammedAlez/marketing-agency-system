@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 210 17% 98%; /* Off-white #F9FAFB */
+    --foreground: 220 10% 20%; /* Darker Neutral Gray for text */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 20%;
+
+    --primary: 220 10% 30%; /* Neutral Gray #434A54 */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 210 16% 93%; /* Lighter gray */
+    --secondary-foreground: 220 10% 30%;
+
+    --muted: 210 16% 90%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 162 72% 45%; /* Teal #20C997 */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 10% 85%;
+    --input: 210 10% 85%;
+    --ring: 162 72% 45%; /* Teal for focus rings */
+
+    --radius: 0.5rem;
+
+    /* Chart specific colors, can be overridden per chart */
+    --chart-1: 162 72% 45%; /* Teal */
+    --chart-2: 220 10% 50%; /* Lighter Neutral Gray */
+    --chart-3: 25 80% 55%; /* Orange-ish for contrast if needed */
+    --chart-4: 280 65% 60%; /* Purple-ish for contrast */
+    --chart-5: 340 75% 55%; /* Pink-ish for contrast */
+
+    --sidebar-background: 220 10% 15%; /* Darker shade of Neutral Gray for sidebar */
+    --sidebar-foreground: 210 20% 85%; /* Light gray for text in sidebar */
+    --sidebar-primary: 162 72% 45%; /* Teal for active/primary items in sidebar */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text on Teal */
+    --sidebar-accent: 220 10% 25%; /* Lighter shade of sidebar bg for hover */
+    --sidebar-accent-foreground: 0 0% 100%; /* White text on hover */
+    --sidebar-border: 220 10% 20%; /* Border color within sidebar */
+    --sidebar-ring: 162 72% 45%; /* Teal for focus rings in sidebar */
+  }
+
+  .dark {
+    /* Define dark theme variables if needed, for now keep them consistent with light or adjust as per dark mode design */
+    --background: 220 10% 10%;
+    --foreground: 210 17% 90%;
+
+    --card: 220 10% 15%;
+    --card-foreground: 210 17% 90%;
+
+    --popover: 220 10% 15%;
+    --popover-foreground: 210 17% 90%;
+
+    --primary: 162 72% 45%; /* Teal as primary in dark */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 10% 25%;
+    --secondary-foreground: 210 17% 90%;
+
+    --muted: 220 10% 25%;
+    --muted-foreground: 210 10% 55%;
+
+    --accent: 220 10% 30%; /* Neutral Gray as accent in dark */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 10% 25%;
+    --input: 220 10% 25%;
+    --ring: 162 72% 45%;
+
+    --chart-1: 162 72% 55%;
+    --chart-2: 220 10% 60%;
+    --chart-3: 25 80% 65%;
+    --chart-4: 280 65% 70%;
+    --chart-5: 340 75% 65%;
+
+    --sidebar-background: 220 10% 5%; 
+    --sidebar-foreground: 210 20% 80%;
+    --sidebar-primary: 162 72% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 10% 12%;
+    --sidebar-ring: 162 72% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
