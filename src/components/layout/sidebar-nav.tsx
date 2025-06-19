@@ -118,14 +118,14 @@ export function SidebarNav({ agencyName, agencyLogoUrl }: SidebarNavProps) {
             <img
               src={agencyLogoUrl}
               alt={`${agencyName} Logo`}
-              className="h-8 w-8 object-cover shrink-0"
+              className="h-8 w-8 object-contain shrink-0"
               data-ai-hint="agency logo"
             />
           ) : (
-            <Logo className="w-8 h-8 text-primary shrink-0" />
+            <Logo className="w-12 h-12 text-primary shrink-0" />
           )}
           <span
-            className="text-lg font-semibold text-sidebar-foreground group-data-[collapsible=icon]:hidden truncate"
+            className="text-sm font-semibold text-sidebar-foreground group-data-[collapsible=icon]:hidden truncate"
             title={agencyName}
           >
             {agencyName}
